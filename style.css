@@ -1,0 +1,226 @@
+/* Mobile first and General rule*/
+
+*{
+    max-width: 100%;
+    box-sizing: border-box; 
+}
+
+body{
+    margin: 0; 
+}
+
+.yellow{
+    height: 200px; 
+    background-color: yellow; 
+    background-image: linear-gradient(#fff660, #ffe8a1); 
+}
+
+.green{
+    height: 50px;
+    background-color: green; 
+    background-image: linear-gradient(#c3ffc3, #7de77d);
+}
+
+.hide{
+    display: none; 
+}
+
+h1{
+    margin: 0; 
+    text-align: center; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-weight: 400;
+    font-size: 3rem;
+    color: rgba(222, 127, 0, 0.83);
+    padding: 50px
+}
+
+main{
+    background-color: rgba(228, 228, 228, 0.192); 
+    margin: auto auto; 
+    padding: 20px 0; 
+    text-align: center; 
+}
+
+.footer{
+    background-color: plum; 
+    background-image: linear-gradient(#adb3e6, #d9f4ff)
+}
+
+.mobile{
+    display: none; 
+}
+
+
+
+@media(min-width: 1025px){
+    /* Index */
+    .yellow{
+        height: 270px; 
+    }
+
+    .green{
+        height: 70px;
+        box-shadow: -6px 7px 18px rgb(189, 189, 189);
+    }
+    
+    h1{
+        font-size: 4.5rem; 
+        font-weight: 400;
+        padding-top: 70px; 
+    }
+
+    .fluffyposition{
+        display: initial;
+        height: 290px;
+        width: auto;
+        position: absolute;
+        right: 4%;
+        top: 1%;
+    }
+
+    main{
+        width: 960px; 
+        padding: 40px 0; 
+    }
+
+    .animals{
+        border: 1px solid #26104b;
+    }
+    
+    .numbers{
+        margin-left: 100px;
+        border: 1px solid #26104b;
+    }
+    
+    .size{
+        height: 500px; 
+        width: auto; 
+    }
+
+    .sentiposition{
+        display: initial; 
+        position: absolute;
+        bottom: -13%;
+        left: 7%;
+        height: 330px;
+    }
+
+    .koalahover{
+        opacity: 0;
+        filter: alpha(opacity0);
+    }
+
+    .koalahover:hover{
+        opacity: 1;
+        filter: alpha(opacity=100); 
+    }
+
+    .koalas {
+        position: relative;
+        display: inline;
+      }
+      .over {
+        position: absolute;
+        left: 0;
+      }
+ 
+      .mobile{
+          display: initial; 
+          background-color: #ff05052a;
+      }
+
+      
+
+    /* Number game page */
+
+    .float{
+        width: 20%; 
+        height: auto;
+        float: left; 
+        padding: 10px; 
+        transition: transform .2s;
+    }
+    
+    .game{
+       height: 600px; 
+       padding: 0; 
+    }
+    
+    
+    .clearfix{
+        clear: both; 
+    }
+
+    .numfluffy{
+        display: initial; 
+        height: 235px;
+        position: absolute;
+        right: 6%;
+        bottom: -3%;
+    }
+
+    .numsent{
+        display: initial;
+        position: absolute;
+        bottom: -8%;
+        left: 8%;
+        height: 325px;
+    }
+
+    .height{
+        height: 1100px; 
+        padding: 0; 
+    }
+    
+    .numberhover:hover{
+        -ms-transform: scale(1.5); 
+        -webkit-transform: scale(1.5); 
+        transform: scale(1.5); 
+    }
+
+    /* Animal game page*/
+    
+    .animalfloat{
+        width: 45%; 
+        float: left;
+        transition: transform .2s;
+    }
+    
+    .left{
+        margin-left: 43px; 
+    }
+    
+    .animalfluffy{
+        display: initial;
+        height: 235px;
+        position: absolute;
+        right: 3%;
+        bottom: -53%;
+    }
+    
+    .animalsenti{
+        display: initial;
+        position: absolute;
+        left: 8%;
+        height: 345px;
+        bottom: -60%; 
+    }
+
+    .animalhover:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); 
+    }
+
+    .sbtn{
+        width: 20%; 
+        height: auto;
+        padding: 10px;
+    }
+
+    .nbtn{
+        float: right; 
+    }
+ 
+}
