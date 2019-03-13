@@ -1,3 +1,11 @@
+/* 
+Hämtar ett element med id, i första fallet bilden till siffran 0. 
+Lägger till en funktion då någon klickar på den. 
+Funktionen i fråga skapar ett nytt audio som vi sedan spelar. 
+
+(Skulle kunnat använda en loop för att slippa upprepning)
+*/
+
 document.getElementById("zero").addEventListener('click', zerosound);
 
 function zerosound() {
@@ -67,4 +75,3 @@ function ninesound() {
     let sound = new Audio ("./audio/numbers/nine.mp3"); 
     sound.play(); 
 } 
-

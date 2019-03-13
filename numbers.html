@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +8,58 @@
     <title>Siffror</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- header -->
     <header>
         <div class="yellow">
             <h1>LEK & LÄR</h1>
         </div>
     </header>
-    
+
+    <!-- main med sidan innehåll -->
+    <!-- knappar för tillbaka och till nästa spel sen clearfix -->
+
     <main class="game">
-        <a href="./index.html">    
+        <a href="./index.html">
             <img class="float" src="./images/backbutton.png" alt="link back to index">
         </a>
 
         <a href="animals.html"><img class="sbtn nbtn" src="./images/nextkbutton.png" alt=""></a>
-        
+
         <div class="clearfix"></div>
-        
-        
-        
+
+    <!-- samtiliga bilder på siffrorna -->
+
         <img id="zero" class="float numberhover" src="./images/numbers/zero.png" alt="">
         <img id="one" class="float numberhover" src="./images/numbers/one.png" alt="">
         <img id="two" class="float numberhover" src="./images/numbers/two.png" alt="">
         <img id="three" class="float numberhover" src="./images/numbers/three.png" alt="">
         <img id="four" class="float numberhover" src="./images/numbers/four.png" alt="">
-        
+
         <img id="five" class="float numberhover" src="./images/numbers/five.png" alt="">
         <img id="six" class="float numberhover" src="./images/numbers/six.png" alt="">
         <img id="seven" class="float numberhover" src="./images/numbers/seven.png" alt="">
         <img id="eight" class="float numberhover" src="./images/numbers/eight.png" alt="">
         <img id="nine" class="float numberhover" src="./images/numbers/nine.png" alt="">
-        
+
     </main>
-    
+
     <div class="clearfix"></div>
-    
+
+    <!-- klassen hide är för att dölja bilderna i mobilversionen -->
+
     <img class="numsent hide" src="./images/senti.png" alt="night senti in the sky">
     <img class="numfluffy hide" src="./images/fluffy.png" alt="">
-    
+
+    <!-- vanliga footern -->
     <footer class="footer">
         <img src="./images/starfooter.png" alt="night stars footer">
     </footer>
+
+    <!-- fick sätta script taggen längst ned in order for it to work-->
     <script type="text/javascript" src="numbers.js"></script>
 </body>
+
 </html>
